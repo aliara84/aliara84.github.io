@@ -2,77 +2,73 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background: #fff;
-  color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff0f5;
 }
 
 .hero {
+  position: relative;
   height: 100vh;
-  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+  background: linear-gradient(rgba(255,192,203,0.6), rgba(255,105,180,0.6)),
+              url('https://images.unsplash.com/photo-1517849845537-4d257902454a') no-repeat center center/cover;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-direction: column;
-  animation: bgShift 20s infinite alternate;
+  justify-content: center;
+  overflow: hidden;
 }
 
-@keyframes bgShift {
-  0% { background: linear-gradient(to right, #ffafbd, #ffc3a0); }
-  100% { background: linear-gradient(to right, #a18cd1, #fbc2eb); }
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 182, 193, 0.3);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
 }
 
 .content h1 {
-  font-size: 4em;
-  font-family: 'Playfair Display', serif;
-  color: #fff;
-  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .content p {
-  font-size: 1.5em;
-  color: #fff;
-  margin: 0.5em 0;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.btn {
-  margin-top: 20px;
-  padding: 12px 28px;
-  font-size: 1em;
-  background-color: #fff;
-  color: #ff69b4;
+.cta-button {
+  padding: 1rem 2rem;
+  background-color: #ff69b4;
+  color: white;
   border: none;
-  border-radius: 50px;
-  cursor: pointer;
+  border-radius: 30px;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  transform: scale(1.05);
+.cta-button:hover {
+  background-color: #ff1493;
 }
 
-.section {
-  padding: 4em 2em;
-  background: #f7f7f7;
+.hearts {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
   text-align: center;
+  font-size: 2rem;
+  animation: float 5s infinite;
+  z-index: 0;
 }
 
-.section h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-}
-
-.fade-in.delay-1 { animation-delay: 0.5s; }
-.fade-in.delay-2 { animation-delay: 1s; }
-
-@keyframes fadeIn {
-  to { opacity: 1; transform: translateY(0); }
-  from { opacity: 0; transform: translateY(30px); }
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }
