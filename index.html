@@ -1,23 +1,31 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Heartmint - عشق دیجیتال</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeartMint 💖</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <div class="hero">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1>به دنیای Heartmint خوش اومدی 💖</h1>
-      <p>جایی که عشق دیجیتال شکل می‌گیره و موندگار میشه</p>
-      <a href="#gallery" class="cta-button">دیدن NFTها</a>
-    </div>
-    <div class="hearts">
-      <span>💗</span><span>💖</span><span>💞</span><span>💕</span><span>💘</span>
-    </div>
-  </div>
+    <header class="hero" data-aos="fade-down">
+        <h1>به دنیای <span>HeartMint</span> خوش اومدی 💖</h1>
+        <p>جایی که عشق دیجیتال شکل می‌گیره و موندگار میشه</p>
+        <a href="#gallery" class="cta">دیدن NFTها 💎</a>
+    </header>
+
+    <section id="gallery" class="gallery">
+        <div class="card" data-aos="zoom-in"><img src="nft1.jpg" alt="NFT 1" /><p>NFT 1</p></div>
+        <div class="card" data-aos="zoom-in"><img src="nft2.jpg" alt="NFT 2" /><p>NFT 2</p></div>
+        <div class="card" data-aos="zoom-in"><img src="nft3.jpg" alt="NFT 3" /><p>NFT 3</p></div>
+    </section>
+
+    <footer data-aos="fade-up">
+        <p>ساخته‌شده با عشق توسط aliara84 💕</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

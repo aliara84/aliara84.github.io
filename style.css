@@ -1,74 +1,72 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #fff0f5;
+    font-family: 'Vazirmatn', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    color: #333;
+    text-align: center;
+    direction: rtl;
 }
 
 .hero {
-  position: relative;
-  height: 100vh;
-  background: linear-gradient(rgba(255,192,203,0.6), rgba(255,105,180,0.6)),
-              url('https://images.unsplash.com/photo-1517849845537-4d257902454a') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+    padding: 60px 20px;
+    background: linear-gradient(to top, #ffe0e9, #ffc3a0);
 }
 
-.overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(255, 182, 193, 0.3);
-  z-index: 1;
+.hero h1 {
+    font-size: 2.5rem;
+    color: #fff;
 }
 
-.content {
-  position: relative;
-  text-align: center;
-  color: #fff;
-  z-index: 2;
+.hero span {
+    color: #ff69b4;
 }
 
-.content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero p {
+    font-size: 1.2rem;
+    margin: 15px 0;
 }
 
-.content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+.cta {
+    padding: 12px 24px;
+    background: #fff;
+    color: #ff69b4;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ff69b4;
 }
 
-.cta-button {
-  padding: 1rem 2rem;
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
 }
 
-.cta-button:hover {
-  background-color: #ff1493;
+.card {
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
 }
 
-.hearts {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
-  animation: float 5s infinite;
-  z-index: 0;
+.card:hover {
+    transform: scale(1.05);
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #fff;
+    padding: 20px;
+    font-size: 0.9rem;
 }
