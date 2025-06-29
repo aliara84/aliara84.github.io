@@ -1,72 +1,89 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
-
 body {
-    font-family: 'Vazirmatn', sans-serif;
-    margin: 0;
-    background: linear-gradient(to right, #ffafbd, #ffc3a0);
-    color: #333;
-    text-align: center;
-    direction: rtl;
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  direction: rtl;
+  text-align: center;
+}
+
+.music {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
 }
 
 .hero {
-    padding: 60px 20px;
-    background: linear-gradient(to top, #ffe0e9, #ffc3a0);
+  padding: 100px 20px;
+  background: rgba(255,255,255,0.2);
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    color: #fff;
-}
-
-.hero span {
-    color: #ff69b4;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin: 15px 0;
+  font-size: 2.5em;
+  color: #fff;
 }
 
 .cta {
-    padding: 12px 24px;
-    background: #fff;
-    color: #ff69b4;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    box-shadow: 0 0 10px #ff69b4;
+  display: inline-block;
+  margin-top: 20px;
+  background: #fff;
+  color: #ff69b4;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
 .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
 }
 
-.card {
-    background: #fff;
-    padding: 10px;
-    border-radius: 15px;
-    width: 200px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
+.gallery img {
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #fff;
+  transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
+.form-section {
+  background: #fff;
+  padding: 40px 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background: #ff69b4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 footer {
-    background: #fff;
-    padding: 20px;
-    font-size: 0.9rem;
+  background: #fff;
+  padding: 20px;
+  margin-top: 40px;
 }

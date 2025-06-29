@@ -1,31 +1,45 @@
 
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HeartMint 💖</title>
-    <link href="style.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heartmint 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="hero" data-aos="fade-down">
-        <h1>به دنیای <span>HeartMint</span> خوش اومدی 💖</h1>
-        <p>جایی که عشق دیجیتال شکل می‌گیره و موندگار میشه</p>
-        <a href="#gallery" class="cta">دیدن NFTها 💎</a>
-    </header>
+  <audio autoplay loop controls class="music">
+    <source src="music.mp3" type="audio/mpeg" />
+    مرورگر شما پخش‌کننده موسیقی را پشتیبانی نمی‌کند.
+  </audio>
 
-    <section id="gallery" class="gallery">
-        <div class="card" data-aos="zoom-in"><img src="nft1.jpg" alt="NFT 1" /><p>NFT 1</p></div>
-        <div class="card" data-aos="zoom-in"><img src="nft2.jpg" alt="NFT 2" /><p>NFT 2</p></div>
-        <div class="card" data-aos="zoom-in"><img src="nft3.jpg" alt="NFT 3" /><p>NFT 3</p></div>
-    </section>
+  <header class="hero" data-aos="fade-down">
+    <h1>به Heartmint خوش آمدی 💖</h1>
+    <p>جایی که عشق دیجیتال به یادگار می‌مونه</p>
+    <a href="#gallery" class="cta">دیدن گالری</a>
+  </header>
 
-    <footer data-aos="fade-up">
-        <p>ساخته‌شده با عشق توسط aliara84 💕</p>
-    </footer>
+  <section id="gallery" class="gallery" data-aos="zoom-in">
+    <div class="slide"><img src="nft1.jpg" alt="NFT 1" /></div>
+    <div class="slide"><img src="nft2.jpg" alt="NFT 2" /></div>
+    <div class="slide"><img src="nft3.jpg" alt="NFT 3" /></div>
+  </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+  <section class="form-section" data-aos="fade-up">
+    <h2>برای کسی که دوستش داری پیام بذار 💌</h2>
+    <form>
+      <input type="text" placeholder="نام مخاطب" required />
+      <textarea placeholder="متن پیام عاشقانه‌ات..." required></textarea>
+      <button type="submit">ارسال پیام</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>ساخته‌شده با عشق توسط aliara84 💫</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
